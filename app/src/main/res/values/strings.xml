@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Squeaky Clean</string>
+
+    <string-array name="services_array">
+        <item>Select a service</item>
+        <item>Janitorial Services</item>
+        <item>Janitorial Services</item>
+        <item>Carpet Cleaning</item>
+        <item>Window Cleaning</item>
+        <item>Gardening Services</item>
+        <item>Shower Cleaning</item>
+        <item>Bathtub Cleaning</item>
+        <item>Bathroom Deep clean</item>
+    </string-array>
+</resources>

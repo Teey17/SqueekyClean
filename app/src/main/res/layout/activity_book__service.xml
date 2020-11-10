@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/book_service"
+    tools:context=".Book_Service">
+
+    <Spinner
+        android:id="@+id/spnrServiceSelected"
+        android:layout_width="399dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/selectDateBook"
+        android:layout_width="135dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/custom_button_1"
+        android:onClick="selectDateOnClick"
+        android:text="Select a date"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnrServiceSelected" />
+
+    <Button
+        android:id="@+id/selectTimeBook"
+        android:layout_width="135dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/custom_button_1"
+        android:onClick="selectTimeOnClick"
+        android:text="Select a Time"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnrServiceSelected" />
+
+    <TextView
+        android:id="@+id/tvBookingSelected"
+        android:layout_width="399dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="6dp"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Booking Details: "
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectDateBook" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="115dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_button_1"
+        android:onClick="book"
+        android:text="book"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBookingSelected" />
+</androidx.constraintlayout.widget.ConstraintLayout>
